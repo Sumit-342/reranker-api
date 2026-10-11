@@ -4,7 +4,7 @@ from fastembed.rerank.cross_encoder import TextCrossEncoder
 
 app = FastAPI()
 
-reranker = TextCrossEncoder(model_name="Xenova/bge-reranker-base")
+reranker = TextCrossEncoder(model_name="BAAI/bge-reranker-base")
 
 class RerankInput(BaseModel):
     query: str
